@@ -1,7 +1,7 @@
 # E-Commerce-System
 ## Simulation for an e-commerce system
 
-   1. Firstly, current customer, product and some prepared baskets of customers are read from seperate files(customers.txt , products.txt, basket.txt)
+   1. Firstly, current customer, product and some prepared baskets of customers are read from seperate files
   
  
      //1. read customer file and in order to keep list implement a stack data structure

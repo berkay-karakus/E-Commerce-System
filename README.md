@@ -3,15 +3,15 @@
 
     1. Firstly, current customer, product and some prepared baskets of customers are read from seperate files(customers.txt , products.txt, basket.txt)
   
- `<addr>`
- //1. read customer file and in order to keep list implement a stack data structure
+ 
+ ```//1. read customer file and in order to keep list implement a stack data structure
 	CustomerPtr customerTopPtr;
 	readCustomerFile(customerTopPtr);
 	//2. read product file
 	ProductPtr productHeadPtr;
 	readProductFile(productHeadPtr);
 	//3. read basket file
-	readBasketFile(customerTopPtr, productHeadPtr); 
+	readBasketFile(customerTopPtr, productHeadPtr);```
   
      
   2. While doing theese readings appropriate data structures are used in order to keep records

@@ -18,8 +18,8 @@
 
 
   
-  // This funtion read customer input file and create a stack data structure in order to implement list
-void readCustomerFile(CustomerPtr customerTopPtr){ 
+    // This funtion read customer input file and create a stack data structure in order to implement list
+      void readCustomerFile(CustomerPtr customerTopPtr){ 
 	FILE *cfPtr = fopen("customer.txt", "r");
 	int customerId;
 	char customerName[50];
@@ -47,7 +47,7 @@ void readCustomerFile(CustomerPtr customerTopPtr){
 	       insertProduct(&productHeadPtr, productId, productName, category, price);
 	        printf("%d\t%s\t%s\t%d\n", productId, productName, category, price);
 	}
-} // end of readProductFile
+    } // end of readProductFile
      void readBasketFile(CustomerPtr customerTopPtr, ProductPtr productHeadPtr){
      	FILE *cfPtr = fopen("basket.txt", "r");
      	int customerId, previousCustomerId;

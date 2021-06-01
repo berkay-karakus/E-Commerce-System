@@ -78,7 +78,7 @@
 		 }
 	 } // end of readBasketFile
 	 
-3. Then, user is asked to select an operation according to given instructions.
+3. Then, user is asked to select an operation according to given instructions and informations are updated via the request.
 
        void instructions(){
        printf("\n1: Add a customer\n"

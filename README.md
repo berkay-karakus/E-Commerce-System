@@ -14,7 +14,7 @@
 	readBasketFile(customerTopPtr, productHeadPtr);
   
      
-  2. While doing theese readings appropriate data structures are used in order to keep records
+  2. While doing these readings appropriate data structures are used in order to keep records
 
 
   
@@ -77,6 +77,17 @@
       		printf("%d\t%d\t%d\n", customerId, basketId, productId);
 		 }
 	 } // end of readBasketFile
+	 
+3. Then, user is asked to select an operation according to given instructions.
+
+       void instructions(){
+       printf("\n1: Add a customer\n"
+        "2: Add basket\n"
+        "3: Remove customer\n"
+        "4: List the customers who bought a specific product\n"
+        "5: List the total shopping amounts of each customer\n"
+        "6: Exit\n");
+        } // end of instructions
 
 
   

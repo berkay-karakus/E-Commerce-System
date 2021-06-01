@@ -253,44 +253,6 @@ void insertProductToBasket(CustomerPtr currentCustomer, ProductPtr currentProduc
 
 
 
-
-/*void printBaskets(FILE *cfPtr, CustomerPtr customerHeadPtr, ProductPtr productHeadPtr){ 
-    CustomerPtr currentCustomerPtr;
-	BasketPtr currentBasketPtr;
-	ProductPtr currentProductPtr;
-	int customerId, previousCustomerId;
-	int basketId, previousBasketId;
-	int productId;
-	cfPtr = fopen("basket.txt", "r");
-	printf("\nBasket List:\n");
-	
-	fscanf(cfPtr, "%d%d%d", &customerId, &basketId, &productId);
-	currentCustomerPtr = findCurrentCustomer(customerHeadPtr, customerId);
-	currentBasketPtr = insertBasketToCustomer(&currentCustomerPtr);
-	currentProductPtr = findCurrentProduct(productHeadPtr, productId);
-	// insertProductToBasket(&currentBasketPtr, currentProductPtr);
-	 
-	printf("%d %d %d\n", customerId, basketId, productId);
-	 while (!feof(cfPtr)){ // while not end of while    // 
-	    previousBasketId = basketId;
-	    previousCustomerId = customerId;
-	 	fscanf(cfPtr, "%d%d%d", &customerId, &basketId, &productId);
-	 	if (previousCustomerId != customerId){
-	 		currentCustomerPtr = findCurrentCustomer(customerHeadPtr, customerId);
-	 		currentBasketPtr = insertBasketToCustomer(&currentCustomerPtr);
-		       }
-	 	if (previousBasketId != basketId && previousCustomerId == customerId){
-	 			currentBasketPtr = insertBasketToCustomer(&currentCustomerPtr);
-		 }
-		 currentProductPtr = findCurrentProduct(productHeadPtr, productId);
-		 //insertProductToBasket(&currentBasketPtr, currentProductPtr);
-	 	   printf("%d %d %d\n", customerId, basketId, productId);
-
-	 }
-} // end of printBaskets*/
-
-
-
 void pushCustomer(CustomerPtr *customerTopPtr, int id, char name[20], char surname[20]){
 	CustomerPtr newPtr = (CustomerPtr)malloc(sizeof(Customer));
 	newPtr->customerId = id;
